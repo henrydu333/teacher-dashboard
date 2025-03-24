@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>教师课程后台</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #4a6cf7;
+      color: white;
+      min-height: 100vh;
+      padding: 20px 10px;
+    }
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .nav-item {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    .nav-item:hover {
+      text-decoration: underline;
+    }
+    .main {
+      flex: 1;
+      padding: 30px;
+    }
+    .course-list {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .course {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+    .course:last-child {
+      border-bottom: none;
+    }
+    .course-title {
+      font-weight: bold;
+    }
+    .course-meta {
+      font-size: 14px;
+      color: #666;
+    }
+    .btn {
+      background-color: #4a6cf7;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>教师后台</h2>
+    <div class="nav-item">今日课程</div>
+    <div class="nav-item">全部课程</div>
+    <div class="nav-item">我的学生</div>
+    <div class="nav-item">课件资源</div>
+    <div class="nav-item">退出登录</div>
+  </div>
+  <div class="main">
+    <h2>今日课程</h2>
+    <div class="course-list">
+      <div class="course">
+        <div class="course-title">进阶版 P3 Lesson105</div>
+        <div class="course-meta">时间：2025年3月25日 01:00 - 01:55｜学生：石楠奇</div>
+        <button class="btn">进入课堂</button>
+      </div>
+      <div class="course">
+        <div class="course-title">进阶版 P3 Lesson4</div>
+        <div class="course-meta">时间：2025年3月25日 22:00 - 22:55｜学生：石昊</div>
+        <button class="btn">进入课堂</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
